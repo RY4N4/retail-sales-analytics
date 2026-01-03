@@ -85,4 +85,3 @@ Retail leaders need clear answers to:
 
 ---
 
-## Project Structure
