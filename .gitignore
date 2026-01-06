@@ -1,0 +1,16 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Databases
+*.db
+
+# macOS
+.DS_Store
+
