@@ -1,87 +1,150 @@
-# retail-sales-analytics
-End-to-end retail sales analytics project using Python, SQL, Tableau, and ML for demand forecasting. 
+# 🛒 Retail Sales Analytics & Demand Forecasting
 
-# Retail Sales Performance & Demand Analytics Platform
+## 📌 Overview
+This project is an **end-to-end retail sales analytics solution** that analyzes historical sales data to uncover business insights and forecast future demand.
 
-## Project Overview
-This project simulates a real-world retail analytics workflow to analyze sales performance across products, regions, and time. The goal is to understand why certain products and regions outperform others and how these insights can support revenue growth, inventory planning, and demand forecasting.
-
-The project follows an end-to-end analytics lifecycle—from raw data ingestion and cleaning to SQL-based data modeling, visual storytelling, and predictive demand forecasting.
+It demonstrates how a **Data Analyst / Business Intelligence professional** approaches real-world retail problems — from raw data to insights, dashboards, and predictive modeling — using industry-standard tools and structured workflows.
 
 ---
 
-## Business Problem
-Retail leaders need clear answers to:
-- Which products and categories drive the majority of revenue?
-- How does performance vary by region and season?
-- Where do discounts impact profitability?
-- What demand trends should be anticipated for better inventory planning?
+## 🎯 Business Objective
+Retail teams often need answers to questions such as:
+- Which products and regions generate the most revenue and profit?
+- How do sales trends vary across time and geography?
+- What products drive consistent performance?
+- Can future demand be forecasted to support inventory planning?
+
+This project addresses these questions through **data-driven analysis and forecasting**.
 
 ---
 
-## Dataset
-**Source:** Kaggle – Superstore / Retail Sales Dataset  
-- 100k+ transaction-level records  
-- Covers orders, products, customers, regions, dates, revenue, profit, and discounts  
-- Industry-recognized dataset commonly used in retail analytics
+## 🧰 Tools & Technologies
+- **Python**: Pandas, NumPy, Matplotlib, Seaborn  
+- **SQL (analytical design)**: schema modeling & KPI logic  
+- **Jupyter Notebook**: analysis and experimentation  
+- **Tableau**: interactive dashboards and storytelling  
+- **Machine Learning**: demand forecasting models  
+- **Git & GitHub**: version control and collaboration  
 
 ---
 
-## Tools & Technologies
-- **Python:** Pandas, NumPy (data cleaning, feature engineering, analysis)
-- **SQL:** Star schema modeling, KPI calculations
-- **Tableau:** Interactive dashboards and business storytelling
-- **Excel:** Pivot tables for KPI validation
-- **Machine Learning:** Scikit-learn (baseline demand forecasting)
-- **Environment:** Google Colab, Jupyter Notebook
+## 🗂 Repository Structure
+retail-sales-analytics/
+│
+├── README.md
+│
+├── data/
+│ ├── raw/
+│ └── cleaned/
+│ ├── cleaned_sales.csv
+│ └── revenue_forecast.csv
+│
+├── notebooks/
+│ └── 01_end_to_end_sales_analysis.ipynb
+│
+├── sql/
+│ ├── schema.sql
+│ └── kpis.sql
+│
+├── dashboards/
+│ └── tableau_dashboard.png
+│
+└── .gitignore
+
 
 ---
 
-## Project Workflow
+## 📓 Analysis Workflow
+The analysis is implemented in a **single end-to-end Jupyter Notebook**:
 
-### Step 1: Data Ingestion & Profiling
-- Loaded raw CSV data and validated schema, data types, and date ranges
-- Identified missing values, duplicates, and invalid records
-- Preserved loss-making transactions to reflect real business scenarios
+### `01_end_to_end_sales_analysis.ipynb`
+This notebook includes:
+1. Data ingestion and profiling  
+2. Data cleaning and feature engineering  
+3. Exploratory Data Analysis (EDA)  
+4. Business insights and trend analysis  
+5. Machine learning–based demand forecasting  
 
-### Step 2: Data Cleaning & Feature Engineering
-- Created core metrics such as Revenue and Profit Margin
-- Standardized categorical fields like Region
-- Engineered time-based features (Year, Month, Quarter) for trend analysis
-
-### Step 3: SQL Analytics Modeling
-- Designed a star-schema data model with fact and dimension tables
-- Built reproducible KPI queries for revenue, growth, and contribution analysis
-- Ensured a single source of truth for downstream analytics
-
-### Step 4: Exploratory Data Analysis (EDA)
-- Analyzed seasonality, SKU concentration, discount impact, and regional performance
-- Identified patterns and anomalies to guide visualization and forecasting
-
-### Step 5: Tableau Storytelling
-- Built interactive dashboards for sales trends, regional comparison, and product contribution
-- Used filters and story points to support executive-level decision-making
-
-### Step 6: Demand Forecasting (ML Add-On)
-- Aggregated sales data to monthly level
-- Built an interpretable baseline forecasting model using linear regression
-- Forecasted future demand to support inventory and planning decisions
+> The single-notebook approach was chosen for **clear storytelling and ease of review**.  
+> The workflow can be modularized into multiple notebooks or production pipelines as the project scales.
 
 ---
 
-## Key Insights
-- A small subset of products contributes a disproportionate share of revenue
-- Clear seasonal demand patterns exist across categories
-- Certain regions generate high revenue but lower margins due to discounting
-- Demand forecasting highlights periods requiring proactive inventory planning
+## 🗄 SQL Layer (Analytical Design)
+SQL files are included to demonstrate **data modeling and KPI logic** commonly used in BI systems.
+
+### `schema.sql`
+- Star-schema–style analytical design  
+- Fact table for sales transactions  
+- Dimension tables for product, customer, and region  
+
+### `kpis.sql`
+Includes queries for:
+- Total revenue and profit  
+- Profit margin  
+- Top products by revenue  
+- Regional performance analysis  
+
+> SQL execution was handled via Python and BI tools; these files document analytical intent and structure.
 
 ---
 
-## Business Recommendations
-- Focus inventory and promotions on high-contribution SKUs
-- Apply region-specific pricing and discount strategies
-- Use seasonal trends to optimize inventory allocation
-- Treat forecasting as a decision-support tool, not a prediction guarantee
+## 📊 Dashboard
+An interactive Tableau dashboard was created to visualize:
+- Revenue and profit trends  
+- Product-level performance  
+- Regional sales distribution  
+- Key business KPIs  
+
+A dashboard snapshot is available in:
 
 ---
 
+## 📈 Key Insights
+- A small set of products contributes disproportionately to total revenue.
+- Sales performance varies significantly by region, indicating localized demand patterns.
+- Clear seasonal trends influence sales volume.
+- Forecasting models provide actionable estimates for future demand planning.
+
+---
+
+## 🤖 Demand Forecasting
+A machine learning model was built to:
+- Learn historical sales patterns
+- Forecast future revenue and demand
+- Support inventory and business planning decisions
+
+Forecast outputs are stored in:
+
+---
+
+## 🚀 Why This Project Matters
+This project demonstrates:
+- Strong analytical thinking
+- Business-focused insight generation
+- Clean project structuring
+- Practical use of BI and ML techniques
+
+It is well-suited for:
+- Data Analyst roles  
+- Business Intelligence roles  
+- Entry-level Data Science roles  
+
+---
+
+## 🔮 Future Enhancements
+- Modularize analysis into reusable pipelines  
+- Automate data ingestion and validation  
+- Enhance forecasting with external variables  
+- Deploy dashboards to Tableau Public / Server  
+- Add CI/CD for analytics workflows  
+
+---
+
+## 👤 Author
+**Clive Lee Alves**  
+Aspiring Data Analyst | Business Intelligence & Analytics
+
+---
+
+⭐ If you find this project useful, feel free to star the repository.
