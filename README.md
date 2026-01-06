@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![Tableau](https://img.shields.io/badge/Tableau-Dashboard-orange.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+
 # 🛒 Retail Sales Analytics & Demand Forecasting
 
 ## 📌 Overview
