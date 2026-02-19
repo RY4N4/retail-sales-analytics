@@ -146,10 +146,4 @@ It is well-suited for:
 
 ---
 
-## 👤 Author
-**Clive Lee Alves**  
-Aspiring Data Analyst | Business Intelligence & Analytics
-
----
-
 ⭐ If you find this project useful, feel free to star the repository.
